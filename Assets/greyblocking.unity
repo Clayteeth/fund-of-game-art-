@@ -42664,7 +42664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5246620093966261823, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.85
+      value: 47.77
       objectReference: {fileID: 0}
     - target: {fileID: 5246620093966261823, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42704,7 +42704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633101147220505914, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: jumpPower
-      value: 15.2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6633101147220505914, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: sprintFOV
@@ -42740,7 +42740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7457888742804659086, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: m_Mass
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7457888742804659086, guid: 9deaa32ac197498409e34e9e570f647e, type: 3}
       propertyPath: m_AngularDrag
