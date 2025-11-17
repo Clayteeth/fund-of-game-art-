@@ -7,7 +7,6 @@ public class PlayerInteract : MonoBehaviour
 {
     public float interactDistance;
     public TMP_Text interactText;
-
     // Start is called before the first frame update
     void Start()
     {

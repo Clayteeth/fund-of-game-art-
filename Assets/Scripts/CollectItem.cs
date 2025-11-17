@@ -12,7 +12,6 @@ public class CollectItem : MonoBehaviour
     public GameObject winScreen;
 
     public AudioSource collectSound;
-
     // Start is called before the first frame update
     void Start()
     {
