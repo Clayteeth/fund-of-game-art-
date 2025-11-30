@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/UI Opening Menu.unity
+    guid: 571cae14b67ece141aa864a31d489bf8
+  - enabled: 1
+    path: Assets/greyblocking.unity
+    guid: 9548e3350598a8442b9b2b9dd5d90947
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

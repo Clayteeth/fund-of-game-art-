@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Start Game");
         StartCoroutine(SceneLoadTimer(1));
     }
-
     public void CloseApplication()
     {
         Debug.Log("Close Application");
@@ -66,6 +65,6 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.8f);
 
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(1);
     }
 }
