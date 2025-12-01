@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mid thin
+  m_Name: mid thick
   m_Shader: {fileID: 4800000, guid: bf60d669e75443447b9669cdc025a0c9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -76,7 +76,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WindSpeed: 0.56
+    - _WindSpeed: 0.85
     - _WindStrength: 0.21
     - _ZWrite: 1
     m_Colors:
