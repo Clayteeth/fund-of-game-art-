@@ -39,8 +39,10 @@ public class WinCondition : MonoBehaviour
 
     void WinGame()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        Time.timeScale = 0; // freeze game
         winUI.SetActive(true);
-        Time.timeScale = 0f; // freeze game
     }
 
     void OnTriggerEnter(Collider other)
