@@ -8,6 +8,9 @@ public class TrashCollectible : MonoBehaviour
     // The version of the item to show on display when collected
     public GameObject displayVersion;
 
+    [Tooltip("Link to the matching shelf slot for this item.")]
+    public ShelfItem shelfItem;   // <-- NEW
+
     [Header("Properties")]
     public float interactDistance = 3f;
 
@@ -35,10 +38,20 @@ public class TrashCollectible : MonoBehaviour
         // Hide collectible in the world
         gameObject.SetActive(false);
 
-        // Show the display version
+        // Show the display version on the shelf
         if (displayVersion != null)
         {
             displayVersion.SetActive(true);
+        }
+
+        // Tell WinCondition that this shelf item is now filled
+        if (shelfItem != null)
+        {
+            shelfItem.MarkFilled();   // <-- NEW: this makes WinCondition pick it up
+        }
+        else
+        {
+            Debug.LogWarning($"{name} has no ShelfItem linked!", this);
         }
     }
 }
