@@ -3,7 +3,7 @@ using UnityEngine;
 public class PauseManager: MonoBehaviour
 {
     public GameObject pauseMenu;
-
+   
     public GameObject Objective;
 
     // Start is called before the first frame update

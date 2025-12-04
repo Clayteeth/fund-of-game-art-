@@ -6,6 +6,7 @@ public class WinCondition : MonoBehaviour
 {
     public ShelfItem[] slots;   // Drag your slots here
     public GameObject winUI;    // Assign your win screen
+    public GameObject Return;
 
     bool inRange = false;
 
@@ -13,6 +14,7 @@ public class WinCondition : MonoBehaviour
     void Start()
     {
         winUI.SetActive(false);
+        Return.SetActive(false);
     }
 
     void Update()
@@ -24,6 +26,11 @@ public class WinCondition : MonoBehaviour
                 WinGame();
             }
             // If NOT all collected, pressing E does nothing
+        }
+
+        if (AllItemsCollected())
+        {
+            Return.SetActive(true);
         }
     }
 
@@ -43,6 +50,7 @@ public class WinCondition : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 0; // freeze game
         winUI.SetActive(true);
+        Return.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
