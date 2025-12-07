@@ -7,6 +7,7 @@ public class WinCondition : MonoBehaviour
     public ShelfItem[] slots;   // Drag your slots here
     public GameObject winUI;    // Assign your win screen
     public GameObject Return;
+    public GameObject Light;
 
     bool inRange = false;
 
@@ -31,6 +32,7 @@ public class WinCondition : MonoBehaviour
         if (AllItemsCollected())
         {
             Return.SetActive(true);
+            Light.SetActive(true);
         }
     }
 
