@@ -114,16 +114,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8429302668652729764, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d2c1868bf40ef047b6029f9f996b307, type: 2}
     - target: {fileID: -3668980038812528430, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0d2c1868bf40ef047b6029f9f996b307, type: 2}
+    - target: {fileID: -2533094905181344557, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.389
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
       propertyPath: m_Name
       value: Sophie_Keltner_FencesReal
       objectReference: {fileID: 0}
+    - target: {fileID: 8424073627695423409, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 42d8df9daf06973479a697aa0ffc37c9, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5670453854174606875, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d4b949c180d6841b2a2f7a9263cec7, type: 3}
