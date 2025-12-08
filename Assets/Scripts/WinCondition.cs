@@ -6,16 +6,21 @@ public class WinCondition : MonoBehaviour
 {
     public ShelfItem[] slots;   // Drag your slots here
     public GameObject winUI;    // Assign your win screen
+    public GameObject collectPrompt; // Assign "collct 6 objects" element
     public GameObject Return;
     public GameObject Light;
+    public GameObject pauseScreen;
 
     bool inRange = false;
+
+    private bool returnMenu = false;
 
 
     void Start()
     {
         winUI.SetActive(false);
         Return.SetActive(false);
+        collectPrompt.SetActive(true);
     }
 
     void Update()
@@ -29,12 +34,17 @@ public class WinCondition : MonoBehaviour
             // If NOT all collected, pressing E does nothing
         }
 
-        if (AllItemsCollected())
+        if (AllItemsCollected() && !returnMenu)
         {
             Return.SetActive(true);
             Light.SetActive(true);
+            collectPrompt.SetActive(false);
+            returnMenu = true;
         }
+
+      
     }
+
 
     bool AllItemsCollected()
     {

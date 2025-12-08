@@ -1689,6 +1689,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   winUI: {fileID: 0}
+  Return: {fileID: 0}
+  Light: {fileID: 0}
 --- !u!1 &9024738160331682783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4437581281835238651, guid: 78765859be6998b4abf1588ad8283766, type: 3}
+    - {fileID: 4426469349388349099, guid: 78765859be6998b4abf1588ad8283766, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

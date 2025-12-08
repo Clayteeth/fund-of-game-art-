@@ -4,7 +4,8 @@ public class PauseManager: MonoBehaviour
 {
     public GameObject pauseMenu;
    
-    public GameObject Objective;
+    public GameObject objective;
+    public GameObject returnToShed;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,8 @@ public class PauseManager: MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
-        Objective.SetActive(false);
+        objective.SetActive(false);
+        returnToShed.SetActive(false);
     }
 
     public void ResumeGame()
@@ -39,6 +41,7 @@ public class PauseManager: MonoBehaviour
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        Objective.SetActive(true);
+         objective.SetActive(true);
+        returnToShed.SetActive(true);
     }
 }

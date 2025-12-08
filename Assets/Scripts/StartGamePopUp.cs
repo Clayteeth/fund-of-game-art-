@@ -13,6 +13,8 @@ public class StartGamePopUp : MonoBehaviour
 
     public GameObject blackScreenImage;
 
+    private bool tutClosed = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,7 +27,7 @@ public class StartGamePopUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.E))
+       if (Input.GetKeyDown(KeyCode.E) && !tutClosed)
        {
            HidePopUp();
        }
@@ -36,5 +38,6 @@ public class StartGamePopUp : MonoBehaviour
         StartUp.SetActive(false);
         Time.timeScale = 1;
         Objective.SetActive(true);
+        tutClosed = true;
     }
 }
